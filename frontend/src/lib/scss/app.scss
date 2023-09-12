@@ -1,0 +1,132 @@
+@import "reset.scss";
+@import "var.scss";
+
+/* Style */
+
+html {
+	height: 100vh;
+	padding: 0;
+}
+
+body {
+	font-family: 'cavier-dreams';
+	height: 100%;
+	color: $text;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+	width: .3em;
+}
+::-moz-scrollbar {
+    background-color: transparent;
+}
+::-ms-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	width: .5em;
+	right: .5em;
+	border-radius: 5em;
+	background-color: transparentize(#fff, .9);
+}
+
+main {
+	height: 100%;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+h5 { font-size: $h5 }
+h4 { font-size: $h4 }
+h3 { font-size: $h3 }
+h2 { font-size: $h2; font-weight: bold; }
+h1 { font-size: $h1; font-weight: bold; }
+
+.flex, .vflex {
+	display: flex; 
+	gap: 1em;
+}
+.vflex { flex-direction: column }
+.flex-justify-center { justify-content: center }
+.flex-align-center { align-items: center }
+.space-between { justify-content: space-between }
+.nogap { gap: 0 }
+.grow { flex: 1 }
+
+.text-center {
+	text-align: center;
+}
+
+.window {
+	position: relative; 
+	background-color: #212121;
+	border: 2px solid transparentize(#fff, .6);
+	border-radius: .2em;
+
+	padding: 2em;
+	color: #fff;
+}
+
+.no-active {
+	background-color: $grey !important;
+	cursor: not-allowed;
+
+}
+
+@font-face {
+	font-family: 'alpha-prota';
+	src: URL('/fonts/AlphaProta.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'cavier-dreams';
+	src: URL('/fonts/CaviarDreams.ttf') format('truetype');
+}
+
+// @font-face {
+// 	font-family: 'modernism-narrow';
+// 	src: URL('/fonts/Modernism-Narrow.ttf') format('truetype');
+// }
+
+// @font-face {
+// 	font-family: 'modernism';
+// 	src: URL('/fonts/Modernism.ttf') format('truetype');
+// }
+
+@font-face {
+	font-family: 'fake-receipt';
+	src: URL('/fonts/fake_receipt.ttf') format('truetype');
+}
+
+
+.loading {
+	color: #000;
+	position: relative;
+}
+.loading::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+	border: 3px solid #fff;
+	animation: loading 1s infinite;
+	border-left-color: $background;
+}
+.loading.white::before {
+	border-left-color: #535353;
+}
+
+@keyframes loading {
+	0% { transform: translate(-50%, -50%) rotate(0deg); }
+	to { transform: translate(-50%, -50%) rotate(360deg); }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "postgres",   
+    "host": "localhost",
+    "port": 5432,
+    "username": "myusername",
+    "password": "mypassword",
+    "database": "mydatabase",
+    "entities": ["src/directMessages/orm/directMessage.entity.ts",
+    "src/directMessages/orm/directMessageRoom.entity.ts",
+    "src/users/orm/user.entity.ts"
+    ],
+    "synchronize": true
+  }
+  

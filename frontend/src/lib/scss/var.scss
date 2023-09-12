@@ -1,0 +1,50 @@
+$background: #000;
+$card: grey;
+$border: grey;
+$grey: #313131;
+$text: black;
+
+/* main */
+$main: #3B1187;
+
+/* main-monochromatic */
+$main-light: #855BD4;
+$main-lowshade: #62439B;
+$main-bright: #5B1BD1;
+$main-dark: #250B54;
+
+/* submain */
+$submain: #31D3F0;
+
+/* submain analogous */
+$submain-blue: #256AF8;
+$submain-lowshadeblue: #218DD9;
+$submain-bluegreen: #21D9C2;
+$submain-lightgreen: #25F8A3;
+
+/* Colors */
+$yellow: #D1C700;
+$green: #279459;
+$newgreen-light: #66CC06;
+$newgreen-dark: #46850B;
+$red: #D23258;
+$red-dark: #522C35;
+
+/* Fonts */
+:root {
+	font-size: 17px;
+}
+
+$font-size-small: .8rem;
+$h5: 1.0rem;
+$h4: 1.2rem;
+$h3: 1.5rem;
+$h2: 1.9rem;
+$h1: 2.2rem;
+
+/* Card */
+$padding: 1.5rem;
+$border-radius: .5rem;
+
+$border: solid 2px transparentize(#fff, .6);
+$border-thin: solid 1px transparentize(#fff, .6);
